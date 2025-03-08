@@ -1,37 +1,36 @@
-# **Steam Idle Batch File Generator** 🎮💻
+# **Steam Idle Master** 🎮💻
 
-## **Overview** 🌟
-A Python script that generates a batch file to idle all games in your Steam library using `steam-idle.exe`. Just input your Steam API key and Steam ID, and the script will create a `.bat` file with commands to open all your games sequentially.
+## **Overview** 🌟  
+Steam Idle Master is a program that automatically generates a batch file to idle all the games in your Steam library. By using your Steam profile, it fetches your game list and, with the help of **Idle Master**, creates a batch file that runs all games without opening them, grinding hours for you.
 
-## **Features** 🔥
-- Automatically fetches all games from your Steam library. 📂
-- Creates a `.bat` file to idle games using `steam-idle.exe`. 📝
-- Easy setup with customizable Steam API key and ID. ⚙️
+This process consumes almost no computer power and has no impact on your system performance. ⚡
 
-## **Installation** 🛠️
+## **How to Use** 🚀
 
-1. **Install Python**: Make sure Python 3.x is installed on your system. 🐍
-2. **Install Dependencies**: Install the `requests` library by running:
-    ```bash
-    pip install requests
-    ```
+1. **Download the Files**:  
+   - Download and extract the project files to a folder on your computer.
 
-3. **Configure API Key and Steam ID**:
-    - Replace `'your_api_key_here'` in the script with your [Steam Web API key](https://steamcommunity.com/dev/apikey). 🔑
-    - Replace `'your_steam_id_here'` with your 64-bit Steam ID (you can use a Steam ID converter to find it). 🆔
+2. **Run the Script**:  
+   - Open `Steam-idle.py`. The script will generate a batch file containing commands to idle all your Steam games.
 
-4. **Install Steam Idle Master Extended**: To idle your games, you'll need [Steam Idle Master Extended](https://github.com/JonasNilson/idle_master_extended/releases). Follow the instructions on the GitHub page to download and set it up. 🔧
+3. **Extract to Desktop**:  
+   - After the script runs, extract the generated batch file to your desktop.
 
-5. **Run the Script**:
-    ```bash
-    python steam_idle.py
-    ```
+4. **Run the Batch File**:  
+   - Double-click the batch file (`steam_idle_commands.bat`) to begin idling your games. It will start all the games in your Steam library and increment hours automatically.
 
-6. **Execute the Generated Batch File**: The script will generate a `.bat` file named `steam_idle_commands.bat`. Simply run this batch file to idle all your Steam games. 🎮
+5. **Shut Down**:  
+   - To stop all idle processes, simply run the `shutdown.bat` file, which will terminate all Steam Idle windows and return your system to normal. 📴
 
-## **Example Output** 💡
-The generated `.bat` file will contain lines like:
-```batch
-start steam-idle.exe 620
-start steam-idle.exe 815370
-start steam-idle.exe 431960
+## **What You Need** 📋
+
+Before using this program, make sure you have the following:
+
+1. **Steam Idle Master Extended**:  
+   Download the latest release of [Idle Master Extended](https://github.com/JonasNilson/idle_master_extended/releases) and set it up.
+
+2. **Steam Web API Key**:  
+   Obtain your [Steam API Key](https://steamcommunity.com/dev/apikey) to enable the script to access your Steam library data.
+
+## **License** ⚖️  
+This project is open-source and available under the MIT License.
